@@ -11,3 +11,4 @@ const WelcomePage = ({ setPage }) => {
 };
 
 export default WelcomePage;
+

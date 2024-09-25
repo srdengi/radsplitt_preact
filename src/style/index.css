@@ -1,39 +1,64 @@
-:root {
-	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	color-scheme: light dark;
-	color: #444;
-	background: #fafafa;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		color: #fff;
-		background: #1c1c1c;
-	}
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	min-height: 100vh;
-}
-
-#app > main {
+.app-container {
 	display: flex;
-	padding-top: 3.5rem;
-	margin: 0 auto;
-	min-height: calc(100vh - 3.5rem);
-	max-width: 1280px;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
+	height: 100vh; /* Altura completa de la vista */
+	background: linear-gradient(135deg, #0b0bd8, #bc3bd6, #1c77e7); /* Gradiente de fondo */
+	color: white; /* Color del texto */
+	font-family: 'Roboto', sans-serif; /* Cambia a una fuente más futurista */
+	padding: 20px; /* Añadir un poco de espacio alrededor */
+  }
+  
+  /* Estilo para los títulos */
+  h1 {
+	color: #FFFFFF; /* Blanco para los encabezados */
+	font-size: 32px; /* Tamaño de fuente del título */
+	margin-bottom: 30px; /* Espacio debajo del título */
+  }
+  
+  /* Estilo para los botones */
+  button {
+	background-color: rgba(10, 45, 243, 0.8); /* Azul Radix con opacidad */
+	color: white;
+	border: none;
+	padding: 16px 32px; /* Aumentar padding para hacer botones más estirados */
+	margin: 11px 0;
+	font-size: 30px; /* Aumentar el tamaño de la fuente para una mejor legibilidad */
+	cursor: pointer;
+	border-radius: 6px;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	display: block;
+	width: 80%; /* Botones no llegan al 100%, dejando espacio a los lados */
+	max-width: 400px; /* Ampliar el ancho máximo de los botones */
+	box-shadow: 0 4px 10px rgba(20, 5, 22, 0.2); /* Sombra para los botones */
+  }
+  
+  button:hover {
+	background-color: #0092cc; /* Azul más oscuro en hover */
+  }
+  
+  .logo {
+	width: 350px; /* Ajusta el ancho según sea necesario */
+	height: auto; /* Mantiene la proporción del SVG */
+	margin-bottom: 20px; /* Espacio debajo del logo */
+  }
 
-@media (max-width: 639px) {
-	#app > main {
-		margin: 0 2rem;
-	}
-}
+  .black-button {
+	background-color: rgba(0, 0, 0, 0.5); /* Negro con poca transparencia */
+	color: white; /* Color del texto */
+	border: none;
+	padding: 10px 15px; /* Ajusta el padding según lo necesites */
+	border-radius: 5px; /* Bordes redondeados */
+	cursor: pointer;
+	position: absolute; /* Para posicionarlo en la esquina superior izquierda */
+	top: 20px; /* Espacio desde la parte superior */
+	left: 20px; /* Espacio desde la izquierda */
+	font-size: 18px; /* Tamaño de fuente */
+	transition: background-color 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .black-button:hover {
+	background-color: rgba(0, 0, 0, 0.7); /* Aumenta la opacidad en hover */
+  }
+  

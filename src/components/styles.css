@@ -1,0 +1,42 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altura completa de la vista */
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); /* Gradiente de fondo */
+  color: white; /* Color del texto */
+  font-family: 'Roboto', sans-serif; /* Cambia a una fuente más futurista */
+  padding: 20px; /* Añadir un poco de espacio alrededor */
+}
+.body{
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
+
+/* Estilo para los títulos */
+h1 {
+  color: #FFFFFF; /* Blanco para los encabezados */
+  font-size: 32px; /* Tamaño de fuente del título */
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* Estilo para los botones */
+button {
+  background-color: rgba(0, 102, 255, 0.8); /* Azul Radix con opacidad */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  width: 80%; /* Botones no llegan al 100%, dejando espacio a los lados */
+  max-width: 300px; /* Ancho máximo de los botones */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para los botones */
+}
+
+button:hover {
+  background-color: #0051cc; /* Azul más oscuro en hover */
+}
