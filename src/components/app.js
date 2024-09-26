@@ -1,11 +1,11 @@
 import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
-import logo from '/assets/logo.svg'; // Asegúrate de que la ruta sea correcta
+import logo from '/assets/logo.svg';
 import WelcomePage from './WelcomePage';
 import MainPage from './MainPage';
 import UserDashboard from './UserDashboard';
 import GroupDashboard from './GroupDashboard';
-import 'style/index.css'; // Asegúrate de que el archivo CSS esté importado
+import 'style/index.css'; 
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('welcome');
@@ -14,16 +14,16 @@ const App = () => {
   useEffect(() => {
     switch (currentPage) {
       case 'welcome':
-        document.title = 'Welcome to RADSPLIT'; // Set your title for Welcome page
+        document.title = 'Welcome to RADSPLIT'; // title for Welcome page
         break;
       case 'main':
-        document.title = 'Main Page - RADSPLIT'; // Set your title for Main page
+        document.title = 'Main Page - RADSPLIT'; //  title for Main page
         break;
       case 'userDashboard':
-        document.title = 'User Dashboard - RADSPLIT'; // Set your title for User Dashboard
+        document.title = 'User Dashboard - RADSPLIT'; //   title for User Dashboard
         break;
       case 'groupDashboard':
-        document.title = 'Group Dashboard - RADSPLIT'; // Set your title for Group Dashboard
+        document.title = 'Group Dashboard - RADSPLIT'; //  title for Group Dashboard
         break;
       default:
         document.title = 'Welcome to RADSPLIT'; // Default title
@@ -46,11 +46,9 @@ const App = () => {
   };
 
   const goBack = () => {
-    // Aquí puedes definir la lógica para regresar a la página anterior
     if (currentPage === 'main') setCurrentPage('welcome');
     else if (currentPage === 'userDashboard') setCurrentPage('main');
     else if (currentPage === 'groupDashboard') setCurrentPage('main');
-    // Agrega más condiciones según sea necesario
   };
 
   return (
