@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import { h } from 'preact';
 import { useState, useEffect } from 'preact/hooks';
 import logo from '/assets/logo.svg'; // Asegúrate de que la ruta sea correcta
